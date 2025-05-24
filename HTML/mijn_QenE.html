@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Skills & Experience</title>
+    <link rel="shortcut icon" type="image/png" href="../Afbeeldingen/LOGO.png" />
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+    <!-- begin to link fonts and icons from font awesome and google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,10;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end to link fonts and icons from font awesome and google fonts -->
+</head>
+
+<body>
+    <!-- start navigation bar -->
+    <div id="mijnQenEbg">
+        <nav>
+            <a href="../index.html"><img src="../Afbeeldingen/LOGO.png" class="logo" alt="Sam Lam Logo"/></a>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/over_mij.html#studie">Education</a></li>
+                <li><a href="../HTML/over_mij.html#toekomst">Future</a></li>
+                <li><a href="../HTML/over_mij.html#hobby">Hobbies</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+                <li class="nav-cta">
+                    <a download href="../Overige_Bestanden/CV.pdf" class="btn btn-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <!-- end navigation bar -->
+
+    <!--- start header section -->
+    <div class="header">
+        <h1>My Skills & Experience</h1>
+        <p>Welcome to my skills and experience page<br />On this page you will find my skills and experiences</p>
+    </div>
+    <!--- end header section -->
+
+    <section>
+        <div id="kwaliteiten">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-2">
+                        <h2>My Skills</h2>
+                        <h5>Productive and <span1>Eager to Learn</span1></h5>
+                        <p>I learn quickly and am productive. I can absorb a lot of information quickly and work hard, fast, and well.</p>
+
+                        <h5>Multilingual and <span1>Patient</span1></h5>
+                        <p>I was raised multilingual at home and can speak Cantonese, English, and Dutch almost fluently. I’m also very patient—if I don’t understand something, I’ll keep going until I do.</p>
+
+                        <h5>Technical and <span1>Helpful</span1></h5>
+                        <p>I have a technical background and can program in HTML, CSS, and JavaScript. I also enjoy helping others and have a lot of patience for those who need assistance.</p>
+
+                        <h5>Goal-Oriented and <span1>Independent</span1></h5>
+                        <p>Being goal-oriented is one of my qualities. Before I begin something, I set a goal and create a plan of action. This helps me achieve my objectives. I'm also often independent—I try to solve problems myself before asking for help.</p>
+                    </div>
+                    <div class="about-col-1">
+                        <img src="../Afbeeldingen/kwaliteiten.jpg" alt="Skills illustration" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience-section">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+
+            <div class="experience-grid">
+                <!-- Internships -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Internships</h3>
+                        <p class="experience-subtitle">Hands-on professional field experience</p>
+                    </div>
+                    <div class="experience-buttons">
+                        <a href="../HTML/mijn_QenE.html#internships-section" class="pill-button banking">Banking</a>
+                        <a href="../HTML/mijn_QenE.html#internships-section" class="pill-button government">Government</a>
+                    </div>
+                </div>
+
+                <!-- Programming Skills -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Programming Languages</h3>
+                        <p class="experience-subtitle">Technologies I work with</p>
+                    </div>
+                    <p class="experience-description">
+                        During my education, I've worked extensively with programming languages like HTML, CSS, and JavaScript.
+                    </p>
+                    <a href="#tech-stack-section" class="cta-button">View my tech stack</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships-section">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="internship-timeline">
+                <!-- moa -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ministry of Foreign Affairs</h3>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <p class="timeline-description">Data Process Improvement</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Process Mapping</span>
+                            <span class="tag">SAS Datamodelling</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <a href="https://www.cbi.eu/" class="timeline-link">Read more about company</a>
+                    </div>
+                </div>
+                <!-- abn -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ABN AMRO</h3>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <p class="timeline-description">Banking Application Development</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Front-End Design</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                        <a href="https://www.abnamro.nl/nl/prive/index.html" class="timeline-link">Read more about company</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack-section">
+        <div class="container">
+            <h2 class="section-title">My Tech Stack</h2>
+            <p class="section-subtitle">Technologies I'm proficient with</p>
+
+            <div class="tech-stack-grid">
+                <div class="tech-item" tabindex="0">
+                    <img src="../Afbeeldingen/HTML.png" alt="HTML logo" class="tech-logo" />
+                    <span class="tech-name">HTML5</span>
+                    <span class="tech-level">Advanced</span>
+                </div>
+
+                <div class="tech-item" tabindex="0">
+                    <img src="../Afbeeldingen/CSS.png" alt="CSS logo" class="tech-logo" />
+                    <span class="tech-name">CSS3</span>
+                    <span class="tech-level">Advanced</span>
+                </div>
+
+                <div class="tech-item" tabindex="0">
+                    <img src="../Afbeeldingen/javascript.png" alt="JavaScript logo" class="tech-logo" />
+                    <span class="tech-name">JavaScript</span>
+                    <span class="tech-level">Intermediate</span>
+                </div>
+
+                <div class="tech-item" tabindex="0">
+                    <img src="../Afbeeldingen/python.png" alt="Python logo" class="tech-logo" />
+                    <span class="tech-name">Python</span>
+                    <span class="tech-level">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---- start footer  -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../index.html">
+                        <img src="../Afbeeldingen/LOGO.png" alt="Sam Lam Logo" class="footer-logo" />
+                    </a>
+                    <p class="footer-about-text">
+                        A passionate ICT student specializing in AI & Data Science.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> samlambussines@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +31 6 21212018</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Purmerend, Netherlands</li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://gitlab.fdmci.hva.nl/bim2_0/studenten/leergroepa/tribe_arthur/lam_sam_blok1/-/branches"
+                            target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="footer-legal">
+                        <a href="Overige_Bestanden/Privacy.pdf" target="_blank">Privacy Policy</a>
+                        <a href="Overige_Bestanden/Voorwaarden.pdf" target="_blank">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright"> &copy; 2025 Sam Lam Personal Portfolio | Designed by Sam Lam</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- script for social icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- end script for social icons -->
+    <script src="../Javascript/script.js"></script>
+</body>
+
+</html>

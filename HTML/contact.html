@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="../Afbeeldingen/LOGO.png">
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+    <!-- begin linking fonts and icons from font awesome and google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,10;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end linking fonts and icons from font awesome and google fonts -->
+</head>
+
+<body>
+    <!-- start navigation bar -->
+    <div id="contactbg">
+        <nav>
+            <a href="../index.html"><img src="../Afbeeldingen/LOGO.png" class="logo" /></a>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/over_mij.html#studie">Study</a></li>
+                <li><a href="../HTML/over_mij.html#toekomst">Future</a></li>
+                <li><a href="../HTML/over_mij.html#hobby">Hobbies</a></li>
+                <li><a href="../HTML/contact.html">Contact</a></li>
+                <!-- <a download class="cv" href="../Overige_Bestanden/CV.pdf"><button>Download CV</button></a> -->
+                <li class="nav-cta">
+                    <a download href="../Overige_Bestanden/CV.pdf" class="btn btn-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </li>
+                <!-- icon for mobile -->
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!-- icon for mobile -->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <!-- icon for mobile -->
+        </nav>
+    </div>
+    <!-- end navigation bar -->
+
+    <!--- start header section -->
+    <div class="header">
+        <h1>Contact Page</h1>
+        <p>Welcome to the contact page<br>Here you can reach out with all your questions and complaints</p>
+    </div>
+    <!--- end header section -->
+
+    <!-- start contact section -->
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><br>Contact Me</h1>
+                <i class="only">Click on email or phone number</i>
+                <p><a href="mailto:samlambussines@gmail.com"><i class="fa-solid fa-paper-plane"></i>samlambussines@gmail.com</a></p>
+                <p><a href="tel:31621212018"><i class="fa-solid fa-phone"></i>+31 6 21212018</a></p>
+                <p><i class="fa-solid fa-location-dot"></i>Oakroad 1924, 1456PC Washington DC.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4872.826932936411!2d4.920187841430668!3d52.362922435285526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1666598286651!5m2!1snl!2snl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-right">
+                <h1 class="sub-title"><br>Do you have questions or comments?</h1><br>
+                <p>You can always send us a message with your email address:</p>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name (Last name - First name)" required>
+                    <input type="email" name="Email" placeholder="Your email (example@example.com)" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-outline">Send</button>
+                </form>
+                <span3 id="message"></span3>
+            </div>
+        </div>
+    </div>
+    <!----------- end contact section ------->
+
+    <!-- start footer section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="../index.html">
+                        <img src="../Afbeeldingen/LOGO.png" alt="Sam Lam Logo" class="footer-logo" />
+                    </a>
+                    <p class="footer-about-text">
+                        A passionate ICT student specializing in AI & Data Science.
+                    </p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> samlambussines@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +31 6 21212018</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Purmerend, Netherlands</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://gitlab.fdmci.hva.nl/bim2_0/studenten/leergroepa/tribe_arthur/lam_sam_blok1/-/branches" 
+                        target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <a href="Overige_Bestanden/Privacy.pdf" target="_blank">Privacy Policy</a>
+                        <a href="Overige_Bestanden/Voorwaarden.pdf" target="_blank">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright"> &copy; 2025 Sam Lam Personal Portfolio | Designed by Sam Lam</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- scripts related to social-icon (ionicons) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- end scripts related to social-icon (ionicons) -->
+    <script src="../Javascript/contact.js"></script>
+</body>
+
+</html>

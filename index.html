@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/png" href="Afbeeldingen/LOGO.png">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <div id="navbackground">
+        <nav>
+            <a href="index.html"><img src="Afbeeldingen/LOGO.png" class="logo" alt="Sam Lam Logo"/></a>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML/over_mij.html#studie">Education</a></li>
+                <li><a href="HTML/over_mij.html#toekomst">Future</a></li>
+                <li><a href="HTML/over_mij.html#hobby">Hobbies</a></li>
+                <li><a href="HTML/contact.html">Contact</a></li>
+                <li class="nav-cta">
+                    <a download href="Overige_Bestanden/CV.pdf" class="btn btn-download">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="hero-title" id="typed-title"></h1>
+        <p class="hero-subtitle" id="typed-subtitle"></p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-secondary">
+                My Projects
+            </a>
+            <a href="HTML/mijn_QenE.html#kwaliteiten" class="btn btn-secondary">
+                My Skills
+            </a>
+            <a href="HTML/mijn_QenE.html#experience-section" class="btn btn-secondary">
+                My Experience
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="Afbeeldingen/mij.jpg" alt="Portrait of Sam Lam" loading="lazy">
+                </div>
+                
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Student, 17 years old</p>
+                    
+                    <div class="about-text">
+                        <p>I'm Sam Lam, a first-year ICT student with a passion for technology and innovation. Born and raised in Purmerend, I combine my studies with my interest in sports, movies, and IT developments.</p>
+                        
+                        <p>My fascination with ICT covers both the technical side (software development) and business applications. I'm constantly looking for ways to expand my knowledge and develop new skills.</p>
+                    </div>
+                    
+                    <a href="HTML/over_mij.html" class="btn btn-outline">
+                        Learn more about me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container1">
+            <h2 class="section-title">My Services</h2>
+            <p class="section-description">Discover how I can help you with my expertise</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <h3 class="service-title">Newsletter</h3>
+                    <p class="service-description">tay updated on my latest projects and developments through my newsletter</p>
+                    <a href="HTML/nieuwsbrief.html" class="btn btn-service">
+                        Subscribe
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <h3 class="service-title">Consultation</h3>
+                    <p class="service-description">Schedule a personal meeting to discuss how I can help with your IT challenges.</p>
+                    <a href="#" class="btn btn-service" onclick="window.open('https://calendly.com/z125081-shibaura-it/30min', '_blank');">
+                        Book a meeting
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <h3 class="service-title">Updates</h3>
+                    <p class="service-description">Check my latest announcements and see what I'm currently working on.</p>
+                    <a href="HTML/aankondigingen.html" class="btn btn-service">
+                        View updates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-description">A selection of my recent work</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/webdevelopment.jpg" alt="Web Development Project" loading="lazy">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">My first major project using HTML, CSS and JavaScript to build this portfolio website.</p>
+                            <a href="https://gitlab.fdmci.hva.nl/bim2_0/studenten/leergroepa/tribe_arthur/lam_sam_blok1/-/tree/Sprint_Revieuws" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/bussinesplan.jpg" alt="Business Plan Project" loading="lazy">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Business Plan</h3>
+                            <p class="project-description">A comprehensive business plan developed for my studies, including market analysis and financial planning.</p>
+                            <a href="#" class="project-link">View project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Business</span>
+                        <span class="tag">Analysis</span>
+                        <span class="tag">Planning</span>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/ai.jpeg" alt="Data Engineering & AI Project" loading="lazy">
+                        <div class="project-overlay">
+                            <h3 class="project-title">Data Engineering & AI</h3>
+                            <p class="project-description">Built AI models and data engineering pipelines efficiently.</p>
+                            <a href="#" class="project-link">View project<i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="section-cta">
+                <a href="HTML/meer_mijn_projecten.html" class="btn btn-outline">
+                    View all projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="Afbeeldingen/LOGO.png" alt="Sam Lam Logo" class="footer-logo">
+                    <p class="footer-about-text">
+                        A passionate ICT student specializing in AI & Data Science.
+                    </p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> samlambussines@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +31 6 21212018</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Purmerend, Netherlands</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://gitlab.fdmci.hva.nl/bim2_0/studenten/leergroepa/tribe_arthur/lam_sam_blok1/-/branches" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <a href="Overige_Bestanden/Privacy.pdf" target="_blank">Privacy Policy</a>
+                        <a href="Overige_Bestanden/Voorwaarden.pdf" target="_blank">Terms</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright"> &copy; <span id="current-year"></span> Sam Lam Personal Portfolio | Designed by Sam Lam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
