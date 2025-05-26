@@ -18,7 +18,7 @@ form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            message.innerHTML = "U bent succesvol aangemeld"
+            message.innerHTML = "You are successfully subscribed to our newsletter!"
             setTimeout(function() {
                 message.innerHTML = ""
             }, 5000)
