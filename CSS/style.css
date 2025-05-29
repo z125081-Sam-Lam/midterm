@@ -994,7 +994,7 @@ form .btn2 {
 }
 
 .project-card:hover .project-overlay {
-    opacity: 1;
+    opacity: 1; /* show overlay on hover */
 }
 
 .project-title {
