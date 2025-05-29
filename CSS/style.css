@@ -224,7 +224,7 @@ a {
 }
 /* end navbackground */
 
-/* start navigatiebar */
+/* start navbar */
 .logo {
     width: 120px;
     cursor: pointer;
@@ -238,20 +238,20 @@ nav {
     align-items: center;
     justify-content: space-around;
 }
-/*navigatiebar: tekststyle(horizontaal/resp.)*/
+/*navbar: tekststyle(horizontal/resp.)*/
 nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
-    position: relative; /*tekstanimatieplaats*/
+    position: relative; /* text animation */
 }
-/*navigatiebar: tekstopmaak*/
+/*navbar: tekstopmaak*/
 nav ul li a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
 }
-/*navigatorbar: tekstanimatie*/
+/*navigatiebar: tekstanimatie*/
 nav ul li::after {
     content: '';
     height: 3px;
@@ -266,7 +266,7 @@ nav ul li:hover::after {
     width: 100%;
 }
 
-/*navigatiebar: cv-button*/
+/*navbar: cv-button*/
 .nav-cta .btn-download {
     background-color: rgba(0, 136, 169, 0.2);
     border: 2px solid var(--primary-color);
@@ -278,9 +278,9 @@ nav ul li:hover::after {
 .nav-cta .btn-download:hover {
     background-color: rgba(0, 136, 169, 0.4);
 }
-/* end navigatiebar */
+/* end navbar */
 
-/* start header section */
+/* start hero section */
 .header {
     width: 100%;
     position: absolute;
@@ -399,21 +399,7 @@ nav ul li:hover::after {
     margin-bottom: 45px;
 }
 
-/*button opmaak*/
-.button1 {
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: 0.4s;
-}
-button:hover {
-    border: 2px solid rgba(0, 136, 169, 0.8);
-    cursor: pointer;
-}
+/*button mark up*/
 
 .about-section {
     background-color: var(--dark-color);
@@ -451,7 +437,7 @@ button:hover {
 }
 /* end about me section */
 
-/* start over mij section */
+/* start about me - extend. section */
 #studie {
     padding: 80px 0;
     background-color: var(--darker-color);
@@ -552,9 +538,9 @@ button:hover {
     width: 100%;
     border-radius: 15px;
 }
-/* einde over mij section */
+/* einde about me section */
 
-/* start mijn QenE section */
+/* start my qualities section */
 #kwaliteiten {
     padding: 80px 0;
     background-color: var(--darker-color);
@@ -835,7 +821,7 @@ button:hover {
     color: #009688;
     font-size: 0.8rem;
 }
-/* einde mijn QenE section */
+/* end my qualities section */
 
 /* start my services */
 #services {
@@ -884,8 +870,8 @@ button:hover {
 }
 /* end my services*/
 
-/* start nieuwsbrief section */
-.nieuwsbried-right {
+/* start newsletter section */
+.nieuwsbrief-right {
     flex-basis: 60%;
 }
 
@@ -900,30 +886,14 @@ form input, form textarea {
     font-size: 18px;
     border-radius: 6px;
 }
-/*design knopje submit*/
-.btn.btn2 {
-    display: inline-block;
-    background: transparent;
-    border-radius: 10px;
-    border: 2px solid rgba(0, 136, 169, 0.8);
-}
-.btn.btn2:hover {
-    background: rgba(0, 136, 169, 0.8);
-}
+
 /* design invoer gedeeldte*/
 .nieuwsbrief-right form {
     width: 100%;
 }
-form .btn2 {
-    padding: 15px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background 0.5s;
-}
-/* eind nieuwsbrief section */
+/* end newsletter section */
 
-/* start aankondigingen section */
+/* start announcements section */
 #aankondigingen {
     padding: 80px 0;
     color: #ababab;
@@ -934,7 +904,7 @@ form .btn2 {
 #aankondigingen .about-col-2 {
     flex-basis: 100%;
 }
-/* eind aankondigingen section */
+/* end announcements section */
 
 
 /* start my projects section */
@@ -1194,7 +1164,7 @@ form .btn2 {
         width: 100%;
     }
 }
-/* eind contact section */
+/* end contact section */
 
 /* start footer section */
 .main-footer {
@@ -1320,7 +1290,6 @@ nav .fa-solid {
     display: none; /*zorgt ervoor dat nav icoontjes in responsive niet te zien is in normaal*/
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   html {
     font-size: 15px;

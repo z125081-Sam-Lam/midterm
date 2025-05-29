@@ -7,9 +7,8 @@ function openmenu() {
 function closemenu() {
     sidemenu.style.left = "-200px";
 }
-// begin javascript: responsive navbar //
 
-// Begin javascript voor invoer data contact form //
+// Begin javascript newsletter form //
 const scriptURL = "https://script.google.com/macros/s/AKfycbyqbP3JlTlHmf1clV0OrpSdfkTD8tPdB8MyZuomwgcxSiTfzg5nGDc7l-NxTgyDeaEjMw/exec"
 const form = document.forms['news-to-google-sheet']
 const message = document.getElementById("message1")
@@ -26,4 +25,4 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
-// end javascript voor invoer data contact form //
+// end javascript newsletter form //
